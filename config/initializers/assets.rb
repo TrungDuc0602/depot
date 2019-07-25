@@ -19,3 +19,5 @@ Rails.application.config.assets.precompile +=
 Rails.application.config.assets.precompile += %w( products.css )
 Rails.application.config.assets.precompile += %w( all.css )
 Rails.application.config.assets.precompile += %w( defaults.js )
+Rails.application.config.assets.precompile += %w( scaffolds.css )
+Rails.application.config.assets.precompile += %w( depot.css )
