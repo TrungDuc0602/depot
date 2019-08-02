@@ -67,8 +67,8 @@ Rails.application.configure do
         :port => 587,
         :domain => 'phocode.com',
         :authentication => 'plain',
-        :user_name => 'huaduc0602@gmail.com',
-        :password => 'Itusunlimited6298',
+        :user_name => ENV["GMAIL_USERNAME"],
+        :password => ENV["GMAIL_PASSWORD"],
         :enable_starttls_auto => true
     }
 

@@ -4,14 +4,15 @@
 </p>
  
 <p>
-    Thank you for your order, your items:
+    This is just to let you know that we've shipped your recent order:
 </p>
 <table>
     <tr>
         <th colspan="2">Quantity</th>
         <th>Description</th>
     </tr>
+    <%= render @order.line_items %>
 </table>
- 
+
 <p>Your payment type: <b><%= @order.pay_type %></b></p>
 <p>Thanks for shopping with <b>Books Store<b> and best regards.</p>

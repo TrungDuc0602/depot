@@ -7,7 +7,6 @@ class NotifierMailer < ApplicationMailer
   #   en.notifier_mailer.order_received.subject
   #
 
-
   default :from => "BookStore <huaduc0602@gmail.com>"
  
   def order_received(order)    
@@ -15,12 +14,4 @@ class NotifierMailer < ApplicationMailer
 
       mail :to => @order.email, :subject => "We've received your order"
   end
-
-
-  # def order_received order
-
-  #   @greeting = "Hi"
-  #   @order = order
-  #   mail :to => @order.email
-  # end
 end
